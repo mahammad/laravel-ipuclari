@@ -8,7 +8,7 @@
 - Controller
 - Helper
 
-### Model
+## Model
 > Model yapısıyla alakalı ipuçları
 
 #### `$fillable` 
@@ -58,13 +58,27 @@ protected $dateFormat = 'U';
 * `float` ondalıklı sayı olarak formatlama
 * `int` tam sayı olarak formatlama 
 * `datetime` tarih formatlama
+    ```php
+    protected $casts = [
+        'id' => 'string',
+        'amount' => 'float',
+        'quantity' => 'integer',
+        'content' => 'array',
+        'created_at' => 'datetime:d-m-Y H:si',
+        'updated_at' => 'datetime:d-m-Y',
+    ];
+    ```
+
+## Blade
+>Blade için ipuçları
+
+### Tanımsız değişken kullanımı
+> örnek için bir blade faklı konumlarda kullanılıyorsa ve bazı veriler her yerde göndermiyor ola bilirsiniz önerilen iki ipuçu
+
 ```php
-protected $casts = [
-    'id' => 'string',
-    'amount' => 'float',
-    'quantity' => 'integer',
-    'content' => 'array',
-    'created_at' => 'datetime:d-m-Y H:si',
-    'updated_at' => 'datetime:d-m-Y',
-];
+// 1. yöntem
+{{ $data ?? null }}
+
+// 2. yöntem
+{{ @$data }}
 ```
