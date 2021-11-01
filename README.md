@@ -30,6 +30,14 @@ protected $hidden = [
 	'password'
 ];
 ```
+
+#### `$dateFormat`
+Model aracılığıyla Tarih/Saat Biçimini Değiştirmek
+
+```php
+protected $dateFormat = 'U';
+```
+
 #### `$timestamps` Varsayılan Kayıt tarihi(`created_at`) ve(veya) Güncelleme(`updated_at`) kolonlarının yönetimi.
 - Kolonların kullanılmadığı durumunda
     ```php
