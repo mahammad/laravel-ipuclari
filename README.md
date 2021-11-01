@@ -2,10 +2,11 @@
 > Sürekli güncel :arrows_counterclockwise:
 
 ## Başlıklar
-- Model
+- [Model](https://github.com/mahammad/laravel-ipuclari#model)
 - Request
-- Blade
-- Controller
+- [Blade](https://github.com/mahammad/laravel-ipuclari#blade)
+- [Controller](https://github.com/mahammad/laravel-ipuclari#controller)
+    - Increments and Decrements (Artışlar ve Azalmalar)   
 - Helper
 
 ## Model
@@ -81,4 +82,30 @@ protected $dateFormat = 'U';
 
 // 2. yöntem
 {{ @$data }}
+```
+
+## Controller
+> Genel itibariyler controller tarafında veya genel kullanımlar
+
+#### Increments and Decrements (Artışlar ve Azalmalar) 
+> örnek: stok artış veya azalması
+```php
+
+$product = Product::find(1);  // id'si 1 olan ürün verisi
+
+// stok artışı genel kullanım
+$product->stock++;
+$product->save();
+
+// stok artışı için önerilen ipuçu
+$product->increment('stock');
+// 10 lu artım, 1. parametre kolon ismi 2. parametre ise artış değeri
+$product->increment('stock',10); 
+
+// stok azalması için genel kullanım
+$product->stock--;
+$product->save();
+
+// stok azalması için önerilen ipuçu
+$product->decrement('stock');
 ```
