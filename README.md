@@ -1,4 +1,5 @@
 # Laravel İpuçları
+> Sürekli güncel :arrows_counterclockwise:
 
 ## Başlıklar
 - Model
