@@ -51,6 +51,8 @@ protected $dateFormat = 'U';
     ```
     
 #### `$casts` kolonlorın formatlanması
+> daha fazlası için [laravel döküman](https://laravel.com/docs/8.x/eloquent-mutators#attribute-casting)
+
 * `array` olarak tanımlanan kolonun array olarak döndüşünü sağlar
 * `string` kolonun string olarak formatlama
 * `float` ondalıklı sayı olarak formatlama
@@ -60,7 +62,7 @@ protected $dateFormat = 'U';
 protected $casts = [
     'id' => 'string',
     'amount' => 'float',
-    'quantity' => 'int',
+    'quantity' => 'integer',
     'content' => 'array',
     'created_at' => 'datetime:d-m-Y H:si',
     'updated_at' => 'datetime:d-m-Y',
