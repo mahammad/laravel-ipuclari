@@ -2,12 +2,12 @@
 > Sürekli güncel :arrows_counterclockwise:
 
 ## Başlıklar
-- [Teorik Bilgiler](https://github.com/mahammad/laravel-ipuclari#teorik)
+- [Teorik Bilgiler](https://github.com/mahammad/laravel-ipuclari#teorik-warning)
 - [Model](https://github.com/mahammad/laravel-ipuclari#model)
 - Request
 - [Blade](https://github.com/mahammad/laravel-ipuclari#blade)
 - [Controller](https://github.com/mahammad/laravel-ipuclari#controller)
-    - Increments and Decrements (Artışlar ve Azalmalar)   
+    - [Increments and Decrements (Artışlar ve Azalmalar)](https://github.com/mahammad/laravel-ipuclari#increments-and-decrements-artışlar-ve-azalmalar)
 - Helper
 
 ## Model
