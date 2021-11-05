@@ -2,6 +2,7 @@
 > Sürekli güncel :arrows_counterclockwise:
 
 ## Başlıklar
+- [Teorik Bilgiler](https://github.com/mahammad/laravel-ipuclari#teorik)
 - [Model](https://github.com/mahammad/laravel-ipuclari#model)
 - Request
 - [Blade](https://github.com/mahammad/laravel-ipuclari#blade)
@@ -109,3 +110,8 @@ $product->save();
 // stok azalması için önerilen ipuçu
 $product->decrement('stock');
 ```
+
+## Teorik :warning:
+
+* Route dosyaları middleware'dan önce çalışır
+* config klasöründe bulunan dosyalar en önce yüklenir. (Örneğin: Dil fonksiyonu app.php 'de çalışmaz )
